@@ -96,7 +96,7 @@ class Gen {
 			data = input.readAll().toString();
 		}
 		else {
-			data = Http.requestUrl("https://lovr.org/api/data/master");
+			data = Http.requestUrl("https://lovr.org/api/data");
 			if (data == null) {
 				Sys.println("unable to download lovr api");
 				Sys.exit(1);
